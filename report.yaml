@@ -1,0 +1,30 @@
+company:
+  name: Team 4point5
+  logo: tech-logo.png
+product_hmw: How might we identify cultural idiosyncrasies to help photographers shoot fresh, local content? 
+product_narrative: |
+  Shutterstock has an amazing repository of stock images. However with increasing globalization of internet, we are finding it hard to keep up with the demand for fresh
+  and local content. We are planing to use the power of Big Data analytics to identify trends and backfill those trends by matching the need with existing contributors who
+  might be able to fulfill them.
+team:
+  picture: team.jpg
+  roster:
+  - name: Irene Font Peradejordi
+    email: if76@cornell.edu
+    picture: irene.jpg
+    program: CM
+  - name: Camyll Harajli
+    email: ch933@cornell.edu
+    picture: camyll.jpg
+    program: HT
+  - name: Yan Tong
+    email: yt534@cornell.edu
+    picture: yan.jpg
+    program: MBA
+  - name: Achal Gupta
+    email: ag2485@cornell.edu
+    picture: achal.jpg
+    program: MBA  
+assets:
+- title: Sprint 1 (Idea Generation)
+  url: https://docs.google.com/presentation/d/1jmuk-leolghapYD9NFcClpzke6V3E38DZtCwviv-eVE/edit?usp=sharing
