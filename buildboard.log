@@ -1,2 +1,1 @@
-Missing yaml file `report.yaml`
-Unable to fetch assets for F19-T024.
+Assets we could fetch: ['report.yaml', 'tech-logo.png', 'team.jpg', 'irene.jpg', 'camyll.jpg', 'achal.jpg']
