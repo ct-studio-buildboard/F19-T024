@@ -1,4 +1,4 @@
-from idea import Idea
+from model.idea import Idea
 from view.user import getUserById
 
 
