@@ -11,7 +11,7 @@ from view.user import getUserById
 
 from flask import Flask, escape, request, jsonify, abort, Response, Request
 
-app = Flask(__name__)
+app = Flask(__name__, root_path='api/')
 app.config['JSON_SORT_KEYS'] = False
 
 @app.errorhandler(404)
@@ -58,4 +58,4 @@ def getIdea(location):
 
 
 if __name__ == "__main__":
-    app.run(port=5000,debug=True)
+    app.run(port=80,debug=True)
