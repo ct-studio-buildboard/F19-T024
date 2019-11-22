@@ -1,6 +1,9 @@
+import json
+
+
 class Idea:
 
-    def _init_(self, location, idea, angle, light, camera):
+    def __init__(self, location, idea, angle, light, camera):
         self.location = location
         self.idea = idea
         self.angle = angle
@@ -8,4 +11,6 @@ class Idea:
         self.camera = camera
 
 
-
+    def toJSON(self):
+        return json.dumps(self, default=lambda o: o.__dict__,
+                          sort_keys=False, indent=4)

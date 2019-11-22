@@ -4,6 +4,7 @@ from collections import OrderedDict
 from imp import reload
 
 from authenticate import requires_auth
+from view.idea import getIdeaForUser
 from view.user import getUserById
 
 #reload(sys)
@@ -44,19 +45,19 @@ def getUser(userId):
     # extracting response text
     user_id = int(userId)
     if(user_id in (1,2)):
-        return Response(getUserById(user_id), mimetype='application/json')
+        return Response(getUserById(user_id).toJSON(), mimetype='application/json')
     else:
         abort(404, description="User does not exist")
 
 
 
-@app.route("/generator/idea/v1/<user_id>/<location>", methods=['GET'])
+@app.route("/generator/idea/v1/<userId>/<city>/<country>", methods=['GET'])
 @requires_auth
-def getIdea(user_id,location):
+def getIdea(userId,city,country):
     # extracting response text
     user_id = int(userId)
     if (user_id in (1, 2)):
-        return Response(getUserById(user_id), mimetype='application/json')
+        return Response(getIdeaForUser(user_id, city, country).toJSON(), mimetype='application/json')
     else:
         abort(404, description="User does not exist")
 
