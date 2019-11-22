@@ -50,11 +50,15 @@ def getUser(userId):
 
 
 
-@app.route("/generator/idea/v1/<location>", methods=['GET'])
+@app.route("/generator/idea/v1/<user_id>/<location>", methods=['GET'])
 @requires_auth
-def getIdea(location):
+def getIdea(user_id,location):
     # extracting response text
-    return jsonify("test")
+    user_id = int(userId)
+    if (user_id in (1, 2)):
+        return Response(getUserById(user_id), mimetype='application/json')
+    else:
+        abort(404, description="User does not exist")
 
 
 if __name__ == "__main__":
