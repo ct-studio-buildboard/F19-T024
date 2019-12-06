@@ -1,6 +1,6 @@
 company:
   name: Team 4point5
-  logo: tech-logo.png
+  logo: shutterstock.jpg
 product_hmw: How might we identify cultural idiosyncrasies to help photographers shoot fresh, local content? 
 product_narrative: |
   Shutterstock has an amazing repository of stock images. However with increasing globalization of internet, we are finding it hard to keep up with the demand for fresh
@@ -30,3 +30,5 @@ assets:
   url: https://docs.google.com/presentation/d/1jmuk-leolghapYD9NFcClpzke6V3E38DZtCwviv-eVE/edit?usp=sharing
 - title: Sprint 2 (De-risking)
   url: https://docs.google.com/presentation/d/1qQr0-IVJpohatIo6h8OZ4DCQZ0jMksvU0f_Hks7bY3U/edit?usp=sharing
+- title: Sprint 3 (Final presentation)
+  url: https://docs.google.com/presentation/d/1msS1p2Ca-DgsWbPOmiSJheXuoe8Poz2UFMzIRdW3-9Q/edit?usp=sharing

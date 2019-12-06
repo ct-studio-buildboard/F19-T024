@@ -12,8 +12,16 @@ from view.user import getUserById
 
 from flask import Flask, escape, request, jsonify, abort, Response, Request
 
+
 app = Flask(__name__, root_path='api/')
 app.config['JSON_SORT_KEYS'] = False
+
+@app.after_request
+def after_request(response):
+  response.headers.add('Access-Control-Allow-Origin', '*')
+  response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
+  response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS')
+  return response
 
 @app.errorhandler(404)
 def resource_not_found(e):
